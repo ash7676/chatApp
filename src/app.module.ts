@@ -4,6 +4,7 @@ import { AppService } from './app.service.js';
 import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from './prisma/prisma.module.js';
 import { ChatModule } from './chat/chat.module.js';
+import { FirebaseModule } from './firebase/fireabse.module.js';
 
 @Module({
     imports: [
@@ -11,6 +12,7 @@ import { ChatModule } from './chat/chat.module.js';
       isGlobal: true,
     }),
     PrismaModule,
+    FirebaseModule,
     ChatModule,
   ],
   controllers: [AppController],
